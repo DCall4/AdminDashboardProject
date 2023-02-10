@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
+    text-align: left;
+ 
+}
+
+.sidebar {
+    grid-row: 1 / span 2;
+    background-color: rgb(32, 112, 178);
+    
+}
+
+.dashboard {
+    color: white;
+    font-size: 32px;
+    justify-self: start;
+}
+
+.sideitem {
+    color: white;
+    display: grid;
+    font-size: 20px;
+    padding: 15px;
+    grid-template-columns: 1fr 4fr;
+}
+
+.MainContent {
+    background-color: rgb(228, 228, 228);
+    display: grid;
+    grid-template: 40px 1fr 1fr / 2fr 1fr;
+}
+
+.projectcontainer {
+    grid-row: 2 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.yprojects, .announcementhead {
+    align-self: center;
+}
+
+.safe {
+    height: 36px;
+    width: 36px;
+    margin-left: -5px;
+}
+
+.Logo {
+    display: grid;
+    color: white;
+    padding: 15px;
+    grid-template-columns: 1fr 4fr;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    height: 200px;
+    box-shadow: 5px 10px 10px grey;
+    border-left: 10px solid rgb(238, 209, 45);
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+
+.proicon,
+.icon {
+    height: 25px;
+}
+
+.sideword {
+    justify-self: start;
+}
+
+.header {
+    display: grid;
+    grid-template: 1fr 2fr / 2fr 1fr;
+    box-shadow: 5px 10px 10px grey;
+}
+
+.searchbar {
+    display: flex;
+    place-self: center;
+    justify-self: start;
+    margin-left: 25px;
+}
+
+form {
+    display: flex;
+}
+
+.search {
+    border-radius: 10px;
+    width: 400px;
+    flex: 1;
+    background-color: rgb(228, 228, 228);
+    border: none;
+}
+
+.profile {
+    display: flex;
+    place-self: center;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center
+}
+
+.bigicon {
+    height: 55px;
+    grid-row: 1 / span 2;
+    background-color: rgb(228, 228, 228);
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.greeting {
+    place-self: center;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 5fr;
+    justify-self: start;
+    margin-left: 15px;
+}
+
+.controlcontainer {
+    place-self: center;
+}
+
+.hi {
+    justify-self: start;
+}
+
+.btn {
+    background-color: rgb(32, 112, 178);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.announce, .announce1 {
+    height: 105px;
+    overflow: hidden;
+    text-overflow: ellipsis '[...]';
+    font-size: 12px;
+    margin: 0 15px 5px 15px;
+}
+
+.announce {
+    border-bottom: 2px solid gray;
+}
+
+.announcements,
+.trendingcontent {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 5px 10px 10px grey;
+}
+
+.announcements {
+    height: 340px;
+    padding-top: 10px;
+}
+
+.trendingcontent{
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.announce > h5,
+.announce1 > h5 {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.prowords > h5 {
+    font-size: 14px;
+    justify-self: start;
+}
+
+.trenders {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-self: start;
+    margin: 10px;
+}
+
+.prowords {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-self: start;
+}
+
+.cardicon {
+    height: 15px;
+}
+
+.cardcontent,
+.title {
+    text-align: left;
+}
+
+.postbuttons {
+    text-align: end;
+}
+
+.announce > p,
+.announce1 > p {
+    text-align: left;
+}
+
+.yprojects,
+.announcementhead,
+.trendinghead {
+    margin-left: 25px;
+    font-weight: 800;
+    font-size: 24px;
+}
